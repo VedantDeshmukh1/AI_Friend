@@ -56,7 +56,7 @@ client = ElevenLabs(api_key=ELEVENLABS_API_KEY)
 # Initialize the ChatOpenAI model
 @st.cache_resource
 def get_llm():
-    return ChatOpenAI(temperature=0.7, model_name="gpt-4", openai_api_key=OPENAI_API_KEY)
+    return ChatOpenAI(temperature=0.7, model_name="gpt-4o", openai_api_key=OPENAI_API_KEY)
 
 # Chat template and chain
 persona = "Zoe"
